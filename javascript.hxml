@@ -1,0 +1,9 @@
+# // javascript.hxml
+-lib js-kit
+-lib hxnodejs
+-lib polygonal-core
+-cp src
+-main MainIntermediate
+-js bin/example.js
+-cmd cd bin
+-cmd node example.js
