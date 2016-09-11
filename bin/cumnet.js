@@ -66,6 +66,7 @@ MainIntermediate.prototype = {
 		this.loadMap();
 		console.log("Generating output...");
 		this.generateOutput();
+		console.log("Complete!");
 	}
 	,generateOutput: function() {
 		var key1 = "ÿ";
@@ -81,7 +82,6 @@ MainIntermediate.prototype = {
 			var _this1 = this.suffixMap;
 			var key3 = key1 + key2;
 			word = (__map_reserved[key3] != null?_this1.getReserved(key3):_this1.h[key3])[this.rng.random() % range | 0];
-			console.log(key1 + " + " + key2 + " = " + word);
 			key1 = key2 + "ÿ";
 			key2 = word;
 			var _this2 = this.suffixMap;

@@ -4,6 +4,6 @@
 -lib polygonal-core
 -cp src
 -main MainIntermediate
--js bin/example.js
+-js bin/cumnet.js
 -cmd cd bin
--cmd node example.js
+-cmd node cumnet.js
