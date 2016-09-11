@@ -1,5 +1,34 @@
+<!DOCTYPE html>
 
-span #{words}
+<html>
+<body>
+
+<form action="submitted" method="post">
+<div>
+<div style="width: 600px; float: left;">
+<br>Paste text here:<br>
+<textarea id="message" name="message" rows="20" cols="50" text="Paste text here to train the chain"></textarea>
+</div>
+
+<div style="margin-left: 620px;"
+<br><br>Output:<br>
+textarea(id="output" name="output", rows="20", cols="50", readonly)
+  | #{words}
+</div>
+</div>
+<br>
+<br><br>
+<input type="submit" value="Submit">
+<input type="reset">
+</form>
+
+
+<form action="getOutput" method="post">
+<input type="submit" value="Click here to generate a tale!">
+</form>
+
+</body>
+</html>
 
 
 <form action="index" method="post">
